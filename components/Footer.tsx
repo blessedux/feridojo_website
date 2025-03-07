@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Instagram, Twitter } from "lucide-react"
+import { Facebook, Instagram, Mail } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -11,17 +11,17 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center">
               <Image
-                src="/placeholder.svg?height=40&width=40"
+                src="/FERIDOJO LOGO 1.svg"
                 alt="Logo"
-                width={40}
-                height={40}
+                width={80}
+                height={80}
                 className="h-10 w-auto"
               />
-              <span className="ml-2 text-xl font-bold">GasfiterPro</span>
+
             </Link>
             <p className="mt-4 text-gray-400 max-w-md">
               Somos especialistas en servicios de gasfitería y bombas hidráulicas, ofreciendo soluciones profesionales
-              para hogares y empresas desde 2005.
+              para hogares y empresas en Chile desde 2005.
             </p>
             <div className="mt-6 flex space-x-4">
               <Link href="#" className="text-gray-400 hover:text-white">
@@ -30,8 +30,8 @@ export default function Footer() {
               <Link href="#" className="text-gray-400 hover:text-white">
                 <Instagram />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white">
-                <Twitter />
+              <Link href="mailto:info@feridojo.cl" className="text-gray-400 hover:text-white">
+                <Mail />
               </Link>
             </div>
           </div>
@@ -71,18 +71,19 @@ export default function Footer() {
           {/* Contact info */}
           <div>
             <h3 className="text-lg font-bold mb-4">Contacto</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>Av. Principal 1234, Santiago, Chile</li>
+            <ul className="space-y-2 text-gray-400">            
               <li>+56 9 1234 5678</li>
-              <li>contacto@gasfiterpro.cl</li>
-              <li>Lunes a Viernes: 8:00 - 18:00</li>
-              <li>Sábados: 9:00 - 14:00</li>
+              <li>
+                <a href="mailto:info@feridojo.cl" className="hover:text-white">
+                  info@feridojo.cl
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
-          <p>© {new Date().getFullYear()} GasfiterPro. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} Feridojo. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

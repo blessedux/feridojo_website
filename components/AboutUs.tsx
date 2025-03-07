@@ -1,19 +1,11 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export default function PumpService() {
+export default function AboutUs() {
   return (
     <div className="section-container" id="servicios">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div>
-          <Image
-            src="/main-pump.webp"
-            alt="Mantenimiento de bombas hidráulicas"
-            width={800}
-            height={600}
-            className="rounded-lg"
-          />
-        </div>
+    
         <div>
           <h2 className="section-title">Venta y Mantenimiento de Bombas Hidráulicas</h2>
           <p className="text-gray-300 mb-6">
@@ -25,7 +17,17 @@ export default function PumpService() {
             Solicitar Servicio
           </Link>
         </div>
+        <div>
+          <Image
+            src="/man-kneeling-down-touching-sink-inspecting-pipes.webp"
+            alt="Mantenimiento de bombas hidráulicas"
+            width={800}
+            height={600}
+            className="rounded-lg"
+          />
+        </div>
       </div>
+
     </div>
   )
 }

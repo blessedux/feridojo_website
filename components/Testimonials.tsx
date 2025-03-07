@@ -1,44 +1,44 @@
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "Excelente servicio, rápido y profesional. Resolvieron mi problema de bomba en menos de 24 horas.",
-      author: "María González",
-      position: "Cliente Residencial",
+      title: "Muy amables",
+      quote: "Nuestra experiencia con Feridojo ha sido excepcional. Su profesionalismo y atención al detalle realmente destacan. Desde el primer contacto hasta la finalizacíon del proyecto, nos demostraron su compromiso con la excelencia. ¡Recomendamos a Feridojo para cualquier necesidad de gasfitería y bombas de agua de alta calidad!",
+      author: "Daniel",
     },
     {
-      quote:
-        "Contratamos sus servicios para el mantenimiento de nuestro sistema de bombeo industrial y quedamos muy satisfechos con los resultados.",
-      author: "Carlos Ramírez",
-      position: "Gerente Industrial",
+      title: "Calidad",
+      quote: "Con Feridojo, encontramos un socio confiable en gasfitería y suministro de bombas de agua. Su equipo dedicado y la calidad de sus productos nos han dejado completamente satisfechos. ¡Una elección acertada para cualquier proyecto!",
+      author: "Amanda",
     },
   ]
 
   return (
-    <div className="bg-gray-800 py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="section-title text-center mb-12">Resuelve hoy con nosotros</h2>
+    <div className="bg-gray-900 py-24" id="testimonios">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h3 className="text-orange-500 uppercase tracking-wider mb-6">TESTIMONIOS</h3>
+        
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+          Contamos con servicios<br />
+          de mantención y<br />
+          reparación para las<br />
+          marcas especificadas.
+        </h2>
+
+        <p className="text-gray-300 max-w-3xl mx-auto mb-16">
+          Nos enorgullece contar con la confianza de cientos de clientes y empresas en Chile.
+          En cada proyecto, trabajamos incansablemente para superar las expectativas y construir
+          relaciones duraderas basadas en la calidad y la fiabilidad de nuestros servicios.
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gray-900 p-6 rounded-lg">
-              <div className="text-yellow-400 text-4xl mb-4">"</div>
-              <p className="text-gray-300 mb-6 italic">{testimonial.quote}</p>
-              <div>
-                <p className="font-bold">{testimonial.author}</p>
-                <p className="text-gray-400 text-sm">{testimonial.position}</p>
-              </div>
+            <div key={index} className="bg-gray-800 shadow-lg rounded-2xl p-8">
+              <div className="text-orange-500 text-6xl font-serif mb-4">"</div>
+              <h3 className="text-2xl font-bold text-white mb-4">{testimonial.title}</h3>
+              <p className="text-gray-300 mb-6">{testimonial.quote}</p>
+              <p className="text-gray-400">— {testimonial.author}</p>
             </div>
           ))}
-        </div>
-
-        <div className="mt-12 text-center">
-          <h3 className="text-2xl font-bold mb-4">
-            Contamos con servicios de mantención y reparación para las principales marcas.
-          </h3>
-          <p className="text-gray-300 max-w-3xl mx-auto">
-            Nuestros técnicos están capacitados para trabajar con todas las marcas líderes del mercado, garantizando un
-            servicio de calidad y confianza.
-          </p>
         </div>
       </div>
     </div>
