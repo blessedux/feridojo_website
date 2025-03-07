@@ -13,14 +13,7 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY package.json package-lock.json ./
 
 # Copy source files
-COPY public ./public
-COPY app ./app
-COPY components ./components
-COPY styles ./styles
-COPY next-env.d.ts ./
-COPY tsconfig.json ./
-COPY tailwind.config.js ./
-COPY components.json ./
+COPY . .
 
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
