@@ -1,5 +1,9 @@
-.git
-.gitmodules
+.git/
+.gitignore
+.env
+.env.*
 node_modules
 .next
-.env*
+README.md
+.dockerignore
+.github
