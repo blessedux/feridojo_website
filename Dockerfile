@@ -17,10 +17,10 @@ COPY public ./public
 COPY app ./app
 COPY components ./components
 COPY styles ./styles
-COPY next.config.js ./
+COPY next-env.d.ts ./
 COPY tsconfig.json ./
-COPY tailwind.config.ts ./
-COPY postcss.config.js ./
+COPY tailwind.config.js ./
+COPY components.json ./
 
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
